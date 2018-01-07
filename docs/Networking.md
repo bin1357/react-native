@@ -65,7 +65,7 @@ fetch('https://mywebsite.com/endpoint/', {
   async function getMoviesFromApi() {
     try {
       let response = await fetch('https://facebook.github.io/react-native/movies.json');
-      let responseJson = await response.json();
+      let responseJson = response.json();
       return responseJson.movies;
     } catch(error) {
       console.error(error);
